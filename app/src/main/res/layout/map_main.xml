@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+   <Button
+       android:id="@+id/button_myLocation"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Turn Back To My Location"
+       tools:ignore="MissingConstraints"
+       android:layout_margin="1dp"/>
+
+      <Button
+          android:id="@+id/button_Paris"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Paris"
+          tools:ignore="MissingConstraints"
+          android:layout_below="@id/button_myLocation"
+          android:layout_margin="1dp"/>
+
+      <Button
+          android:id="@+id/button_NewYork"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="NewYork"
+          tools:ignore="MissingConstraints"
+          android:layout_margin="1dp"
+          android:layout_below="@id/button_Paris"/>
+
+      <Button
+          android:id="@+id/button_London"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="London"
+          tools:ignore="MissingConstraints"
+          android:layout_margin="1dp"
+          android:layout_below="@id/button_NewYork"/>
+   <fragment
+       android:id="@+id/google_map"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+
+
+
+</RelativeLayout>
