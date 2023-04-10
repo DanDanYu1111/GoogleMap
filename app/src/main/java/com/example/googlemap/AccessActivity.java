@@ -40,6 +40,7 @@ public class AccessActivity extends AppCompatActivity {
     private static String testData;
     SupportMapFragment supportMapFragment;
     FusedLocationProviderClient fusedLocationProviderClient;
+    int i;
 
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("database","onCreate的第一行");
